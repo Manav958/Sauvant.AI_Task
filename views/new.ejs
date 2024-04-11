@@ -1,0 +1,61 @@
+<% layout('layouts/bp') %>
+<div class="row">
+    <h1 class="text-center">Apply for loan</h1>
+    <div class="col-6 offset-3">
+        <form action="/upload_loan" method="POST" >
+            <div class="mb-3">
+                <label class="form-label" for="fullName">Full Name</label>
+                <input class="form-control" type="text" id="fullName" name="user[fullName]">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="need">How much you need?</label>
+                <input class="form-control" type="number" id="need" name="user[need]">
+
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label" for="tenure">Loan tenure (in months)</label>
+                <input class="form-control" type="text" id="tenure" name="user[tenure]">
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="empStatus">Employement status</label>
+                <input class="form-control" type="text" id="empStatus" name="user[empStatus]">
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="reason">Reason for loan</label>
+                <input class="form-control" type="text" id="reason" name="user[reason]">
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="address">Employement address</label>
+                <input class="form-control" type="text" id="address" name="user[address]">
+
+            </div>
+
+            
+            <div class="mb-3">
+                <button class="btn btn-success">Apply</button>
+
+            </div>
+
+            
+            
+
+        </form>
+        <div class="mb-3">
+            <label>Terms and Condition</label><br>
+            <input type="checkbox" id="fullTime" name="employmentType" value="fullTime">
+            <label for="fullTime">I have read the important information and accept it</label><br>
+            <input type="checkbox" id="partTime" name="employmentType" value="partTime">
+            <label for="partTime">Any personal credit info obtained may be disclosed to other lenders</label><br>
+        </div>
+        
+    </div>
+    
+
+</div> 

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard_verify.css">
+    <title>Document</title>
+</head>
+<style>
+    .custom-select {
+        background-color: inherit;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 8px 12px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .custom-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-button:hover {
+        background-color: #0056b3;
+    }
+
+    .items {
+        width: 1000px;
+    }
+
+    .item1 {
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <header>
+
+        <div class="logosec">
+            <div class="logo">Credit App</div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                class="icn menuicn" id="menuicn" alt="menu-icon">
+        </div>
+        <div class="logosec">
+            <div class="logo">Admin Dashboard</div>
+            
+        </div>
+        <div class="message">
+            <div class="circle"></div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png" class="icn" alt="">
+            <div class="dp">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                    class="dpicn" alt="dp">
+            </div>
+        </div>
+
+    </header>
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option optiontop">
+                        <img class="dpic"
+                            src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png">
+                        <h3> John doe</h3>
+                    </div>
+                    <div class="nav-option option1">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img" alt="dashboard">
+                        <h3> Dashboard</h3>
+                    </div>
+
+                    <div class="option2 nav-option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                            class="nav-img" alt="articles">
+                        <h3>Borrowers</h3>
+                    </div>
+
+                    <div class="nav-option option3">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+                            class="nav-img" alt="report">
+                        <h3>Loans</h3>
+                    </div>
+
+                    <div class="nav-option option4">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
+                            class="nav-img" alt="institution">
+                        <h3>Repayments</h3>
+                    </div>
+
+                    <div class="nav-option option5">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png"
+                            class="nav-img" alt="blog">
+                        <h3> Loan parameters</h3>
+                    </div>
+
+                    <div class="nav-option option6">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
+                            class="nav-img" alt="settings">
+                        <h3> Settings</h3>
+                    </div>
+                    <div class="nav-option logout">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                            class="nav-img" alt="logout">
+                        <h3>Logout</h3>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+
+            <div class="box-container">
+
+                <div class="box box1">
+                    <div class="text">
+                        <h2 class="topic-heading"><%=cnt%></h2>
+                        <h2 class="topic">ACTIVE USERS</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
+                        alt="Views">
+                </div>
+
+                <div class="box box2">
+                    <div class="text">
+                        <h2 class="topic-heading"><%=cnt%></h2>
+                        <h2 class="topic">BOROWERS</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png" alt="likes">
+                </div>
+
+                <div class="box box3">
+                    <div class="text">
+                        <h2 class="topic-heading"><%=totalLoan%></h2>
+                        <h2 class="topic">CASH DISTRIBUTED</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png"
+                        alt="comments">
+                </div>
+
+                <div class="box box4">
+                    <div class="text">
+                        <h2 class="topic-heading">0</h2>
+                        <h2 class="topic">CASH RECIVED</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published">
+                </div>
+                <br />
+            </div>
+
+            <br>
+            <div class="box-container">
+
+                <div class="box box1">
+                    <div class="text">
+                        <h2 class="topic-heading">0</h2>
+                        <h2 class="topic">SAVINGS</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
+                        alt="Views">
+                </div>
+
+                <div class="box box2">
+                    <div class="text">
+                        <h2 class="topic-heading">0</h2>
+                        <h2 class="topic">REPAID LOANS</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png" alt="likes">
+                </div>
+
+                <div class="box box3">
+                    <div class="text">
+                        <h2 class="topic-heading">1</h2>
+                        <h2 class="topic">OTHER ACCOUNTS</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png"
+                        alt="comments">
+                </div>
+
+                <div class="box box4">
+                    <div class="text">
+                        <h2 class="topic-heading"><%=approvedCount%></h2>
+                        <h2 class="topic">LOANS</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published">
+                </div>
+                <br />
+            </div>
+            <div class="report-container">
+                <div class="report-header">
+                    <h1 class="recent-Articles">Recent Loans</h1>
+                    <button class="view">View All</button>
+                </div>
+
+                <div class="report-body">
+                    <div class="report-topic-heading" style="width: 900px;">
+                        <p class="t-op" style="font-size: 25px; padding-right: 20px;">User Details</p>
+                        <p class="t-op" style="font-size: 25px; padding-right: 20px;">Customer Name</p>
+                        <p class="t-op" style="font-size: 25px; padding-right: 20px;">Date</p>
+                        <p class="t-op" style="font-size: 25px; padding-right: 20px;">Action</p>
+                    </div>
+                    <div class="items">
+                        <% for (let u of us) { %>
+                        <div class="item1" style="padding-right: 120px;">
+                            <h3 class="t-op-nextlvl"><form action="/show_user/<%=u._id%>"><button class="custom-button">view</button></form></h3>
+                            <h3 class="t-op-nextlvl " style="padding-left:10px;"><%= u.fullName %></h3>
+                            <h3 class="t-op-nextlvl">June 09, 2021</h3>
+                            <form action="/updateStatus" method="post">
+                                <input type="hidden" name="userId" value="<%= u.id %>">
+                                <select name="status" class="custom-select"
+                                    style="background-color: <%= u.loan_status.stat === 'approved' ? 'lightgreen' :
+                                    (u.loan_status.stat === 'rejected' ? 'lightcoral' :
+                                    (u.loan_status.stat === 'pending' ? 'yellow' : 'inherit')) %>;">
+                                    <option value="pending" <% if (u.loan_status.stat === 'pending') { %> selected <% } %>>Pending</option>
+                                    <option value="approved" <% if (u.loan_status.stat === 'approved') { %> selected <% } %>>Approved</option>
+                                    <option value="rejected" <% if (u.loan_status.stat === 'rejected') { %> selected <% } %>>Rejected</option>
+                                </select>
+                                <button type="submit" class="custom-button">Save</button>
+                            </form>
+                        </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
